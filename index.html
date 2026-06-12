@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexusCalc</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <div class="app-container">
+
+        <!-- Header -->
+        <header>
+            <h1>NexusCalc</h1>
+
+            <div class="header-actions">
+                <button id="history-btn">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                </button>
+
+                <button id="theme-btn">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+            </div>
+        </header>
+
+        <!-- Calculator Section -->
+        <main>
+
+            <!-- Display -->
+            <div class="display-section">
+
+               <div class="expression" id="expression">
+</div>
+
+<div class="result" id="result">
+    0
+</div>
+
+            </div>
+
+            <!-- Buttons -->
+            <div class="calculator-grid">
+
+    <button data-value="AC">AC</button>
+    <button data-value="CE">CE</button>
+    <button data-value="BACK">⌫</button>
+    <button data-value="/">÷</button>
+
+    <button data-value="sin">sin</button>
+    <button data-value="cos">cos</button>
+    <button data-value="tan">tan</button>
+    <button data-value="sqrt">√</button>
+
+    <button data-value="7">7</button>
+    <button data-value="8">8</button>
+    <button data-value="9">9</button>
+    <button data-value="*">×</button>
+
+    <button data-value="4">4</button>
+    <button data-value="5">5</button>
+    <button data-value="6">6</button>
+    <button data-value="-">-</button>
+
+    <button data-value="1">1</button>
+    <button data-value="2">2</button>
+    <button data-value="3">3</button>
+    <button data-value="+">+</button>
+
+    <button data-value="pi">π</button>
+    <button data-value="0">0</button>
+    <button data-value=".">.</button>
+    <button data-value="=">=</button>
+
+</div>
+<div class="history-panel" id="history-panel">
+
+    <div class="history-header">
+        <h3>History</h3>
+        <button id="clear-history">
+            Clear
+        </button>
+    </div>
+
+    <div id="history-list">
+
+    </div>
+
+</div>
+        </main>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
